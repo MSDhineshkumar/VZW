@@ -19,7 +19,7 @@ import org.openqa.selenium.interactions.Actions;
 public class VzwHp_validation {
 	static DateFormat dateFormat = new SimpleDateFormat("MM-dd-yyyy ");
 	static Date date = new Date();
-	static String today= dateFormat.format(date);
+	static String today= dateFormat.format(date).trim();
 	public static void Execute(WebDriver driver) throws IOException{
 		
 //		Hp(driver);
@@ -65,7 +65,7 @@ public class VzwHp_validation {
 			footer1.click();
 			File footer = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(footer, new File("D:\\MSD\\Execution\\Automation\\"+today+"\\VZWhp\\superfooter"+1+""+i+".jpg"));
-					
+												D:\MSD\Execution\Automation\07-26-2017 \VZWhp'
 			driver.navigate().back();
 		 }
 			
