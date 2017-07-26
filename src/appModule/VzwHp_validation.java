@@ -22,7 +22,7 @@ public class VzwHp_validation {
 	static String today= dateFormat.format(date).trim();
 	public static void Execute(WebDriver driver) throws IOException{
 		
-//		Hp(driver);
+		Hp(driver);
 //		madlibs(driver);
 		Superfooterlink(driver);
 		footerlink(driver);
@@ -65,7 +65,7 @@ public class VzwHp_validation {
 			footer1.click();
 			File footer = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(footer, new File("D:\\MSD\\Execution\\Automation\\"+today+"\\VZWhp\\superfooter"+1+""+i+".jpg"));
-												D:\MSD\Execution\Automation\07-26-2017 \VZWhp'
+//												D:\MSD\Execution\Automation\07-26-2017 \VZWhp'
 			driver.navigate().back();
 		 }
 			
